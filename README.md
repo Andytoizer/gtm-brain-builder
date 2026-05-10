@@ -51,14 +51,34 @@ systems/mvp-checklist.md
 
 That checklist keeps the agent focused on building the brain before drifting into operating GTM, launching campaigns, making dashboards, or creating downstream assets.
 
-## Fast Start
+## Install
 
-Clone the repo:
+The repo ships two manifests so the same plugin works under both runtimes:
+
+- `.codex-plugin/plugin.json` for Codex
+- `.claude-plugin/plugin.json` (and `.claude-plugin/marketplace.json`) for Claude Code
+
+### Codex
+
+Clone the repo into your Codex plugin path; the `.codex-plugin/plugin.json` manifest registers it.
 
 ```bash
 git clone https://github.com/Andytoizer/gtm-brain-builder.git
 cd gtm-brain-builder
 ```
+
+### Claude Code
+
+Add the repo as a plugin marketplace, then install the plugin:
+
+```text
+/plugin marketplace add Andytoizer/gtm-brain-builder
+/plugin install gtm-brain-builder@gtm-brain-builder
+```
+
+The second `@gtm-brain-builder` is the marketplace name from `.claude-plugin/marketplace.json`.
+
+## Fast Start
 
 Create a new GTM Brain:
 
@@ -66,12 +86,17 @@ Create a new GTM Brain:
 python3 scripts/init_gtm_brain.py "Acme GTM Brain" --path ./Acme-GTM-Brain
 ```
 
-Then ask Codex/Claude Code:
+Then start the build:
 
 ```text
-Use $gtm-brain-builder to build this company GTM Brain.
-Start with tool connections and source coverage.
+Codex:        Use $gtm-brain-builder to build this company GTM Brain.
+              Start with tool connections and source coverage.
+
+Claude Code:  /gtm-brain-builder Build this company GTM Brain.
+              Start with tool connections and source coverage.
 ```
+
+In Claude Code you can also describe the goal in plain English — the orchestrator skill auto-triggers from its description without needing the slash command.
 
 ## The First Session
 
@@ -209,10 +234,12 @@ This repo intentionally ships reusable workflows, templates, and generic lessons
 
 ## Validate Locally
 
-Check the plugin manifest:
+Check the plugin manifests:
 
 ```bash
 python3 -m json.tool .codex-plugin/plugin.json >/dev/null
+python3 -m json.tool .claude-plugin/plugin.json >/dev/null
+python3 -m json.tool .claude-plugin/marketplace.json >/dev/null
 ```
 
 Test the scaffold:

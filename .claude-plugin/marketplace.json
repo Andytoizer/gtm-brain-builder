@@ -1,0 +1,14 @@
+{
+  "name": "gtm-brain-builder",
+  "owner": {
+    "name": "Andy Toizer",
+    "url": "https://github.com/Andytoizer"
+  },
+  "plugins": [
+    {
+      "name": "gtm-brain-builder",
+      "source": ".",
+      "description": "Build a source-backed GTM brain from connected tools, operator judgment, and reusable section agents."
+    }
+  ]
+}
