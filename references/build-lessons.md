@@ -13,8 +13,9 @@ Use these lessons when building a new GTM Brain. They are distilled from a produ
 7. Separate tone from sales copy. Speaker tone comes from that person's own writing and speaking samples. Sales calls and campaign tools feed buyer language, objections, proof, message framing, and copy performance.
 8. Customer proof needs layers. A customer name, logo, use case, outcome, metric, quote, screenshot, and case study are separate approval decisions.
 9. Billing identity is not always public company identity. Alias cleanup is needed when tools show legal entities, product brands, personal email domains, parent companies, or main-user domains.
-10. Automations should propose updates first. Broad GTM interpretation should not be silently promoted from fresh source pulls.
-11. The MVP checklist was a major unlock. It kept agents focused on building the GTM Brain before drifting into operating GTM, launching campaigns, or creating downstream assets.
+10. Design systems need a brief before generation. Codex, Claude.ai/design, or any design tool should receive source-backed audience, perception, claim, proof, tone, reference, anti-reference, and import instructions.
+11. Automations should propose updates first. Broad GTM interpretation should not be silently promoted from fresh source pulls.
+12. The MVP checklist was a major unlock. It kept agents focused on building the GTM Brain before drifting into operating GTM, launching campaigns, or creating downstream assets.
 
 ## Build Order That Worked Best
 
@@ -25,8 +26,9 @@ Use these lessons when building a new GTM Brain. They are distilled from a produ
 5. Build customer/proof and ICP from commercial, CRM, usage, and support evidence.
 6. Build market and messaging from public story, buyer language, objections, campaigns, and proof.
 7. Build brand and speaker-tone profiles.
-8. Build sales memory and campaign learnings.
-9. Add recurring freshness workflows.
+8. Create a design-system brief and import workflow when visual systems are needed.
+9. Build sales memory and campaign learnings.
+10. Add recurring freshness workflows.
 
 ## Common Failure Modes
 
@@ -36,4 +38,5 @@ Use these lessons when building a new GTM Brain. They are distilled from a produ
 - Treating the handoff as a loose summary instead of a checklist with clear next work.
 - Letting one tool dominate conclusions.
 - Mixing person-specific tone with performance-backed sales messaging.
+- Asking design tools to invent a brand system without a source-backed brief or owner review.
 - Promoting a working theory into durable positioning without accountable owner review.

@@ -32,7 +32,8 @@ Your job is to keep the project on track as a brain-building project, not an ope
 3. Customer ICP agent
 4. Messaging market agent
 5. Brand voice agent
-6. Sales memory agent
-7. Freshness automation agent
+6. Design system agent
+7. Sales memory agent
+8. Freshness automation agent
 
 If using parallel agents, assign disjoint write scopes and tell them not to overwrite each other.

@@ -18,6 +18,7 @@ Create `systems/tools.md` and `systems/sources.md` before filling canonical GTM 
 | Call recordings | buyer language, objections, buying reasons, competitive mentions | revenue truth or final interpretation |
 | Outbound tools | tested copy, audiences, reply rates, campaign performance | current product capability without date caveats |
 | Docs/Notion/Drive | internal plans and historical context | current public truth when website/app disagrees |
+| Design tools | visual source assets, brand-kit drafts, design-system references, Codex import instructions | positioning, proof, or product claims without GTM Brain support |
 
 ## First-Pass Connector Checklist
 
@@ -29,7 +30,7 @@ Create `systems/tools.md` and `systems/sources.md` before filling canonical GTM 
 - Team comms: Slack or Teams.
 - Call recordings: Fathom, Gong, Sybill, Fireflies, Zoom transcripts.
 - Campaign tools: Instantly, HeyReach, Smartlead, Customer.io, HubSpot Marketing, LinkedIn ads.
-- Docs/design: Notion, Drive, Figma, website, brand assets.
+- Docs/design: Notion, Drive, Figma, Claude.ai/design, Codex design workflows, website, brand assets.
 
 ## Rule
 

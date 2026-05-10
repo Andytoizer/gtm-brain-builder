@@ -37,7 +37,7 @@ icp/           best customers, ICP, personas, segments
 customers/     customer list, proof, quotes, feedback
 messaging/     buyer language, objections, value props, positioning
 market/        category, competitors, alternatives
-brand/         brand guidance and speaker-tone profiles
+brand/         brand guidance, design-system brief, speaker-tone profiles
 sales/         campaign memory, outbound copy guide, sales learnings
 systems/       sources, tools, MVP checklist, automations
 session-relay/ handoff notes and transcript archive policy
@@ -111,7 +111,7 @@ Ask the agent to map:
 - Email and team comms: Gmail, Outlook, Slack, Teams.
 - Call recordings: Fathom, Gong, Sybill, Zoom transcripts.
 - Campaign tools: Instantly, HeyReach, Smartlead, Customer.io, ads.
-- Docs and brand sources: Notion, Drive, website, Figma, public docs.
+- Docs and brand sources: Notion, Drive, website, Figma, Claude.ai/design, Codex design workflows, public docs, brand assets.
 
 The output should be:
 
@@ -122,6 +122,20 @@ systems/source-coverage.md
 ```
 
 Each source should say what it is trusted for and what it should not be used for.
+
+## Design System With Claude.ai/Design And Codex
+
+When the brain has enough company, ICP, messaging, proof, and tone context, the agent can help the operator prepare the right design brief, use [Claude.ai/design](https://claude.ai/design) or a Codex design workflow, and import the approved design system back into the GTM Brain.
+
+Use this flow:
+
+1. Gather the source-backed brand brief from the GTM Brain: `company/product-truth.md`, `company/approved-claims.md`, `icp/`, `messaging/`, `customers/proof-approval.md`, `brand/voice-system.md`, and any existing website, deck, Figma, Canva, logo, or screenshot assets.
+2. Ask `$design-system-agent` to prepare `brand/design-system-brief.md` with audience, category, desired perception, tone boundaries, visual references, proof constraints, required outputs, and explicit do-not-claim rules.
+3. Open `https://claude.ai/design`, create a brand-kit or design-system project, paste the brief, and upload approved visual assets. If the next step is implementation, ask the agent to convert the approved brief into Codex instructions for tokens, components, CSS, slides, or site assets.
+4. Ask the design tool for brand-kit/design-system outputs: logo usage, color palette with hex values, typography recommendations, layout rules, image style, component examples, slide/social examples, and do/don't examples.
+5. Review the output with Grill-me before treating it as durable taste. Store approved decisions in `brand/brandkit.md`, project links and exports in `brand/design-resources.md`, import instructions in `brand/design-system-brief.md`, and voice implications in `brand/voice-system.md`.
+
+Claude.ai/design and Codex can help turn approved strategy into usable visual direction and implementation instructions. They should not invent positioning, customer proof, or product claims that are not already supported by the brain.
 
 ## How The Agent System Works
 
@@ -150,6 +164,7 @@ Specialist agents own specific sections:
 - `customer-icp-agent`: customers, proof, ICP, personas.
 - `messaging-market-agent`: buyer language, objections, positioning, market.
 - `brand-voice-agent`: brand and speaker-tone profiles.
+- `design-system-agent`: design-system briefs, Claude.ai/design or Codex design workflows, and import guidance.
 - `sales-memory-agent`: campaigns, sales memory, outbound lessons.
 - `freshness-automation-agent`: recurring refresh workflows.
 
@@ -165,8 +180,9 @@ The recommended order is:
 4. Build customer/proof and ICP from commercial, CRM, usage, and customer evidence.
 5. Build messaging and market context from buyer language, objections, campaigns, and proof.
 6. Build brand and speaker-tone profiles.
-7. Build sales memory and campaign learnings.
-8. Design recurring freshness workflows.
+7. Create the design-system brief and import workflow when visual systems are needed.
+8. Build sales memory and campaign learnings.
+9. Design recurring freshness workflows.
 
 This order matters because it keeps the brain grounded. Campaigns, decks, website copy, and sales assets should consult the brain after it has enough source-backed shape.
 
@@ -224,6 +240,7 @@ It should clearly separate:
 It should also separate:
 
 - Speaker tone from sales copy.
+- Design-system rules from unreviewed generated design drafts.
 - Customer names from approved proof claims.
 - Raw evidence from durable interpretation.
 - Building the brain from operating GTM.

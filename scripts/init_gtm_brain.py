@@ -42,6 +42,7 @@ SECTION_FILES = {
     ],
     "brand": [
         "brandkit.md",
+        "design-system-brief.md",
         "design-resources.md",
         "voice-system.md",
         "speaker-tone-operator.md",
@@ -114,6 +115,166 @@ Describe what belongs here and which sources should feed it.
 """
 
 
+def brand_starter_doc(filename: str) -> str:
+    if filename == "brandkit.md":
+        return """# Brandkit
+
+Status: Empty starter
+
+## Purpose
+
+Store approved visual brand decisions that downstream decks, pages, campaigns, and agents can use.
+
+## Current Context
+
+- Working theory:
+- Evidence:
+- Questions:
+- Do not claim:
+
+## Claude.ai/Design Workflow
+
+Use Claude.ai/design when the company wants to create or refine a practical brand kit from GTM Brain context.
+
+1. Gather source-backed inputs: product truth, approved claims, ICP, messaging, proof approvals, voice system, website, logo files, screenshots, decks, Figma, Canva, and other approved assets.
+2. Ask the agent to draft a Claude.ai/design prompt with audience, category, desired perception, tone boundaries, visual references, proof constraints, and do-not-claim rules.
+3. Open `https://claude.ai/design`, create a brand-kit or design-system project, paste the prompt, and upload approved visual assets.
+4. Ask for logo usage, color palette with hex values, typography recommendations, layout rules, image style, component examples, slide/social examples, and do/don't examples.
+5. Review with Grill-me before approving durable taste decisions.
+
+## Approved Brand Kit
+
+- Logo usage:
+- Colors:
+- Typography:
+- Layout rules:
+- Image style:
+- Components:
+- Do:
+- Do not:
+
+## Source Notes
+
+- Source:
+- Date range:
+- Caveats:
+"""
+    if filename == "design-resources.md":
+        return """# Design Resources
+
+Status: Empty starter
+
+## Purpose
+
+Track the design assets, Claude.ai/design projects, exports, and visual references that support the brand kit.
+
+## Resource Inventory
+
+| Resource | Link/location | Status | Use for | Do not use for |
+|---|---|---|---|---|
+| Claude.ai/design project | TBD | Unknown | brand-kit drafts and visual exploration | unapproved claims or positioning |
+| Website | TBD | Unknown | current public visual direction | private strategy |
+| Figma/Canva/decks | TBD | Unknown | existing design system and examples | final truth without owner review |
+| Logo/assets | TBD | Unknown | approved visual assets | altered usage without approval |
+
+## Claude.ai/Design Notes
+
+- Project link:
+- Prompt used:
+- Inputs uploaded:
+- Outputs exported:
+- Owner review status:
+- Approved decisions moved to `brand/brandkit.md`:
+
+## Source Notes
+
+- Source:
+- Date range:
+- Caveats:
+"""
+    if filename == "design-system-brief.md":
+        return """# Design System Brief
+
+Status: Empty starter
+
+## Purpose
+
+Prepare the right source-backed brief before using Claude.ai/design, Codex, or another design workflow to create a brand kit, design system, deck style, landing page direction, social templates, component library, or coded UI.
+
+## Goal
+
+- What are we trying to create:
+- Where will it be used:
+- Who will review/approve it:
+
+## Source-Backed Inputs
+
+- Product truth:
+- Approved claims:
+- ICP/audience:
+- Messaging/value props:
+- Proof constraints:
+- Voice/tone boundaries:
+- Existing visual assets:
+
+## Design Direction
+
+- Desired perception:
+- Brand personality:
+- Visual references:
+- Anti-references:
+- Accessibility constraints:
+- Required outputs:
+
+## Prompt For Claude.ai/Design Or Codex
+
+```text
+Goal:
+Audience:
+Category/context:
+Desired perception:
+Brand personality:
+Tone boundaries:
+Approved claims:
+Proof constraints:
+Do not claim:
+Existing visual assets:
+Visual references:
+Anti-references:
+Required outputs:
+Accessibility constraints:
+Review criteria:
+Import targets:
+```
+
+## Codex Import Instructions
+
+- Tokens to create/update:
+- Typography rules:
+- Component rules:
+- Asset paths:
+- Responsive behavior:
+- Accessibility notes:
+- Files or docs to update:
+
+## Review Checklist
+
+- [ ] Does not invent product claims, proof, metrics, or customer permissions.
+- [ ] Matches approved company/product truth.
+- [ ] Matches ICP and desired perception.
+- [ ] Separates visual direction from speaker voice.
+- [ ] Approved decisions copied to `brand/brandkit.md`.
+- [ ] Project links, prompts, and exports copied to `brand/design-resources.md`.
+
+## Source Notes
+
+- Source:
+- Date range:
+- Caveats:
+"""
+    return starter_doc(title_from_filename(filename))
+
+
 def root_readme(name: str) -> str:
     return f"""# {name}
 
@@ -138,7 +299,7 @@ Use `systems/grill-me.md` before turning evidence into durable interpretation. A
 - `messaging/`: buyer language, objections, value props, positioning, offers.
 - `market/`: category, competitors, and alternatives.
 - `customers/`: customer list, proof, quotes, case studies, feedback.
-- `brand/`: brandkit, design resources, voice system, speaker tones.
+- `brand/`: brandkit, design-system brief, Claude.ai/design resources, voice system, speaker tones.
 - `sales/`: campaigns, process, results, outbound copy, examples.
 - `systems/`: sources, tools, automations, update rules, relay behavior.
 - `projects/`: unpublished workspaces.
@@ -197,6 +358,7 @@ Build the GTM Brain MVP: source coverage, canonical docs, proof/ICP/messaging/to
 - Build customer/proof/ICP context from evidence.
 - Build messaging and market context from buyer language, objections, campaigns, and proof.
 - Build brand and speaker-tone profiles.
+- Create a design-system brief and import workflow when visual systems are needed.
 - Build sales memory from campaign evidence.
 - Maintain session relay and next checklist.
 - Design refresh workflows after the canonical docs have shape.
@@ -217,6 +379,7 @@ Build the GTM Brain MVP: source coverage, canonical docs, proof/ICP/messaging/to
 - [ ] Customer/proof and ICP docs are grounded in at least commercial, CRM, usage, and customer evidence where available.
 - [ ] Messaging/market docs preserve buyer language and objections before interpretation.
 - [ ] Brand and speaker-tone docs separate tone from sales copy.
+- [ ] Design-system brief, generated drafts, approved brand rules, and Codex import notes are separated when visual systems are in scope.
 - [ ] Sales memory distinguishes what ran from what worked.
 - [ ] Session relay is updated with decisions, status, and next work.
 - [ ] Freshness automation is proposed, not silently applied.
@@ -272,6 +435,7 @@ Inventory every source system here.
 | Slack/Teams | Unknown | recent context and customer-channel language | final truth alone |
 | Calls | Unknown | objections, buyer language, buying reasons | revenue truth |
 | Campaign tools | Unknown | copy, audience, replies, performance | current capability truth |
+| Claude.ai/design/Codex design | Unknown | brand-kit drafts, visual systems, design exploration, import instructions | unapproved positioning, proof, or product claims |
 """,
         "systems/source-coverage.md": f"""# Source Coverage
 
@@ -311,6 +475,7 @@ Future agents should read this after the root `README.md`. Do not read transcrip
 - [ ] Customer/proof/ICP
 - [ ] Messaging/market
 - [ ] Brand/voice
+- [ ] Design-system brief/import
 - [ ] Sales memory
 - [ ] Freshness automation
 
@@ -348,7 +513,10 @@ def main() -> None:
             elif section in {"projects/operator/building-the-brain", "session-relay"} and filename == "README.md":
                 write(target, relay_doc(args.name), args.force)
             else:
-                write(target, starter_doc(title_from_filename(filename)), args.force)
+                if section == "brand":
+                    write(target, brand_starter_doc(filename), args.force)
+                else:
+                    write(target, starter_doc(title_from_filename(filename)), args.force)
 
     print(root)
 

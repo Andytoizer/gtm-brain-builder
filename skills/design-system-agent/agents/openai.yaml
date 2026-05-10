@@ -1,0 +1,7 @@
+interface:
+  display_name: "Design System Agent"
+  short_description: "Brief, generate, review, and import design systems."
+  brand_color: "#2456F6"
+  default_prompt: "Use $design-system-agent to create a design-system brief and import the approved brand kit."
+policy:
+  allow_implicit_invocation: true

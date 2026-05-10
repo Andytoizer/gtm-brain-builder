@@ -9,6 +9,7 @@ Use this before calling a GTM Brain section done.
 - It links to or names source locations without dumping raw private data.
 - It routes raw evidence, drafts, and durable context to different places.
 - It asks for operator review where interpretation matters.
+- It keeps design briefs, generated design drafts, approved brand rules, and implementation/import notes separate.
 - It has enough specificity for a teammate or agent to use it tomorrow.
 
 ## Fails
@@ -19,4 +20,5 @@ Use this before calling a GTM Brain section done.
 - It mixes customer proof permissions together.
 - It treats campaign performance as product truth.
 - It treats speaker tone as buyer language.
+- It treats generated design output as approved brand direction.
 - It requires rereading long transcripts to resume the work.

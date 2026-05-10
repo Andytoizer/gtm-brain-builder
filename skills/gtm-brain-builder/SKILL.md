@@ -38,8 +38,9 @@ Run section work in this order unless the user has a sharper priority:
 3. `$customer-icp-agent`
 4. `$messaging-market-agent`
 5. `$brand-voice-agent`
-6. `$sales-memory-agent`
-7. `$freshness-automation-agent`
+6. `$design-system-agent` when the user needs a brand kit, design-system brief, Claude.ai/design workflow, or Codex import instructions
+7. `$sales-memory-agent`
+8. `$freshness-automation-agent`
 
 If actual subagents are available and the user explicitly asks for parallel agents, use the plugin-level agent definitions in `../../agents/` and split work by section with disjoint write scopes. Otherwise, act as the relevant specialist yourself and load only the relevant skill.
 
@@ -51,6 +52,7 @@ If actual subagents are available and the user explicitly asks for parallel agen
 - `../../agents/customer-icp-agent.md`: owns customers, proof, and ICP.
 - `../../agents/messaging-market-agent.md`: owns messaging and market.
 - `../../agents/brand-voice-agent.md`: owns brand and speaker tone.
+- `../../agents/design-system-agent.md`: owns design-system briefs, design tool workflows, and import guidance.
 - `../../agents/sales-memory-agent.md`: owns sales memory.
 - `../../agents/freshness-automation-agent.md`: owns refresh design.
 
@@ -84,6 +86,7 @@ A first usable GTM Brain has:
 - Customer/proof/ICP docs grounded in commercial, CRM, usage, and customer evidence.
 - Messaging and market docs grounded in buyer language and proof.
 - Brand and speaker-tone profiles separated from sales copy.
+- Design-system brief and import notes when visual systems are in scope.
 - Sales memory with campaign lessons and caveats.
 - Session relay handoff and transcript archive policy.
 - Proposed refresh cadence.

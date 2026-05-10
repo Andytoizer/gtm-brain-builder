@@ -35,6 +35,7 @@
     "defaultPrompt": [
       "Use $gtm-brain-builder to create a GTM brain for my company.",
       "Use $source-connector-inventory to map my GTM tools.",
+      "Use $design-system-agent to create a design-system brief and import the approved brand kit.",
       "Use $grill-me to stress-test this positioning."
     ],
     "brandColor": "#2456F6"
