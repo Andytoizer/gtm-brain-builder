@@ -1,10 +1,14 @@
 # GTM Brain Builder
 
+Built by Andy Toizer — I write [Agent Operator](https://agentoperator.substack.com/), a newsletter about what it actually looks like to build real systems with coding agents as a non-engineer, using live company data.
+
 Build a source-backed GTM Brain for your company with Codex agents, skills, Grill-me questions, and session handoffs.
 
 A GTM Brain is a shared operating context for marketing, sales, support, CS, founders, and AI agents. It captures what your company does, who you sell to, what customers actually say, what proof is usable, what messaging works, and which sources should be trusted.
 
-This repo packages the workflow for building one.
+TLDR: GTM Brain Builder creates a structured company GTM brain, starts by connecting your real tools, uses specialist agents and skills to fill each section, forces source-backed interpretation through Grill-me questions, and keeps long builds on track with an MVP checklist and session handoffs.
+
+It was originally built for [Freckle.io](https://www.freckle.io/)'s company GTM brain, then repurposed into a public plugin anyone can use to build their own version.
 
 ## Why This Exists
 
