@@ -1,0 +1,7 @@
+interface:
+  display_name: "Grill Me"
+  short_description: "Ask sharp questions before GTM claims harden."
+  brand_color: "#F59E0B"
+  default_prompt: "Use $grill-me to stress-test this GTM decision."
+policy:
+  allow_implicit_invocation: true

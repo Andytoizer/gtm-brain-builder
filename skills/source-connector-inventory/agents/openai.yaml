@@ -1,0 +1,7 @@
+interface:
+  display_name: "Source Connector Inventory"
+  short_description: "Map GTM tools and source coverage."
+  brand_color: "#2456F6"
+  default_prompt: "Use $source-connector-inventory to map my GTM tools and access gaps."
+policy:
+  allow_implicit_invocation: true

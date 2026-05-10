@@ -1,0 +1,7 @@
+interface:
+  display_name: "Company Core Agent"
+  short_description: "Build company and product truth."
+  brand_color: "#2456F6"
+  default_prompt: "Use $company-core-agent to build the company core section."
+policy:
+  allow_implicit_invocation: true

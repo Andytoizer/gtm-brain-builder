@@ -1,0 +1,7 @@
+interface:
+  display_name: "Brand Voice Agent"
+  short_description: "Build brand and speaker voices."
+  brand_color: "#2456F6"
+  default_prompt: "Use $brand-voice-agent to build brand and speaker-tone profiles."
+policy:
+  allow_implicit_invocation: true

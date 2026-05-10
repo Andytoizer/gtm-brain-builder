@@ -1,0 +1,42 @@
+{
+  "name": "gtm-brain-builder",
+  "version": "0.1.0",
+  "description": "Build a source-backed GTM brain from connected tools, operator judgment, and reusable section agents.",
+  "author": {
+    "name": "Andy Toizer",
+    "url": "https://github.com/Andytoizer"
+  },
+  "homepage": "https://github.com/Andytoizer/gtm-brain-builder",
+  "repository": "https://github.com/Andytoizer/gtm-brain-builder",
+  "license": "MIT",
+  "keywords": [
+    "gtm",
+    "sales",
+    "marketing",
+    "knowledge-base",
+    "agent-workflows"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GTM Brain Builder",
+    "shortDescription": "Build a connected, source-backed GTM brain.",
+    "longDescription": "A shareable plugin for building a company GTM brain. It starts by connecting source systems, then uses Grill-me, session relay, and section-specific agents and skills to turn evidence into durable company, ICP, messaging, proof, brand, sales, and automation context.",
+    "developerName": "Andy Toizer",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write",
+      "Research",
+      "Workflow"
+    ],
+    "websiteURL": "https://github.com/Andytoizer/gtm-brain-builder",
+    "privacyPolicyURL": "https://github.com/Andytoizer/gtm-brain-builder",
+    "termsOfServiceURL": "https://github.com/Andytoizer/gtm-brain-builder",
+    "defaultPrompt": [
+      "Use $gtm-brain-builder to create a GTM brain for my company.",
+      "Use $source-connector-inventory to map my GTM tools.",
+      "Use $grill-me to stress-test this positioning."
+    ],
+    "brandColor": "#2456F6"
+  }
+}

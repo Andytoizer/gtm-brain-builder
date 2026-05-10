@@ -1,0 +1,7 @@
+interface:
+  display_name: "Freshness Automation Agent"
+  short_description: "Design GTM Brain refresh workflows."
+  brand_color: "#2456F6"
+  default_prompt: "Use $freshness-automation-agent to design GTM Brain refresh workflows."
+policy:
+  allow_implicit_invocation: true

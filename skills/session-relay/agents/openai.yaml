@@ -1,0 +1,7 @@
+interface:
+  display_name: "Session Relay"
+  short_description: "Keep long GTM builds resumable."
+  brand_color: "#10B981"
+  default_prompt: "Use $session-relay to prepare a compact GTM Brain handoff."
+policy:
+  allow_implicit_invocation: true

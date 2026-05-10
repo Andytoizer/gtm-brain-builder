@@ -1,0 +1,7 @@
+interface:
+  display_name: "Messaging Market Agent"
+  short_description: "Build messaging and market context."
+  brand_color: "#2456F6"
+  default_prompt: "Use $messaging-market-agent to build messaging and market context."
+policy:
+  allow_implicit_invocation: true

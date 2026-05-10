@@ -1,0 +1,7 @@
+interface:
+  display_name: "Sales Memory Agent"
+  short_description: "Build campaign and sales memory."
+  brand_color: "#2456F6"
+  default_prompt: "Use $sales-memory-agent to build sales memory from campaign evidence."
+policy:
+  allow_implicit_invocation: true

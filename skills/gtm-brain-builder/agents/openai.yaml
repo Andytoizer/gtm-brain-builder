@@ -1,0 +1,7 @@
+interface:
+  display_name: "GTM Brain Builder"
+  short_description: "Orchestrate a connected GTM brain build."
+  brand_color: "#2456F6"
+  default_prompt: "Use $gtm-brain-builder to create a GTM brain for my company."
+policy:
+  allow_implicit_invocation: true

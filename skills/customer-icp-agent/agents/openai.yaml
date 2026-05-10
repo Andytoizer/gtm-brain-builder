@@ -1,0 +1,7 @@
+interface:
+  display_name: "Customer ICP Agent"
+  short_description: "Build customers, proof, and ICP."
+  brand_color: "#2456F6"
+  default_prompt: "Use $customer-icp-agent to build customer and ICP context."
+policy:
+  allow_implicit_invocation: true
