@@ -4,7 +4,7 @@ Built by Andy Toizer — I write [Agent Operator](https://agentoperator.substack
 
 A GTM Brain is a shared operating context for marketing, sales, support, CS, founders, and AI agents. It captures what your company does, who you sell to, what customers actually say, what proof is usable, what messaging works, and which sources should be trusted.
 
-GTM Brain Builder is the Codex plugin I wish I had at the start: it creates the repo structure, starts with your real tools and source coverage, uses specialist agents and skills to fill each section, and keeps the work grounded with Grill-me questions, an MVP checklist, and session handoffs.
+GTM Brain Builder creates the repo structure, starts with real tools and source coverage, uses specialist agents and skills to fill each section, and keeps the work grounded with Grill-me questions, an MVP checklist, and session handoffs.
 
 It was originally built for [Freckle.io](https://www.freckle.io/)'s company GTM brain, then repurposed into a public plugin anyone can use to build their own version.
 

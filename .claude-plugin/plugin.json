@@ -1,0 +1,23 @@
+{
+  "name": "gtm-brain-builder",
+  "version": "0.1.0",
+  "description": "Build a source-backed GTM Brain for your company with specialist agents, skills, Grill-me questions, MVP checklists, and session handoffs. Originally built for Freckle.io's company GTM brain, then repurposed into a public plugin anyone can use.",
+  "author": {
+    "name": "Andy Toizer",
+    "url": "https://agentoperator.substack.com/"
+  },
+  "homepage": "https://github.com/Andytoizer/gtm-brain-builder",
+  "repository": "https://github.com/Andytoizer/gtm-brain-builder",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "gtm",
+    "agents",
+    "skills",
+    "knowledge-base",
+    "sales",
+    "marketing",
+    "freckle",
+    "agent-operator"
+  ]
+}
