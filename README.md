@@ -66,7 +66,7 @@ Create a new GTM Brain:
 python3 scripts/init_gtm_brain.py "Acme GTM Brain" --path ./Acme-GTM-Brain
 ```
 
-Then ask Codex:
+Then ask Codex/Claude Code:
 
 ```text
 Use $gtm-brain-builder to build this company GTM Brain.
@@ -128,7 +128,7 @@ Specialist agents own specific sections:
 - `sales-memory-agent`: campaigns, sales memory, outbound lessons.
 - `freshness-automation-agent`: recurring refresh workflows.
 
-Skills are the procedural playbooks those agents use. If the runtime does not spawn separate agents, the main Codex agent can still use the same skills sequentially.
+Skills are the procedural playbooks those agents use. If the runtime does not spawn separate agents, the main Codex/Claude Code agent can still use the same skills sequentially.
 
 ## The Build Order
 
